@@ -79,11 +79,6 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
-
-        keyno {
-            bindings = <&kp A>;
-            key-positions = <18 19 20>;
-        };
     };
 
     macros {
