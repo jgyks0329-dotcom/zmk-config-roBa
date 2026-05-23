@@ -34,6 +34,11 @@
     quick-tap-ms = <0>;
 };
 
+&kscan0 {
+    debounce-press-ms = <10>;
+    debounce-release-ms = <10>;
+};
+
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
