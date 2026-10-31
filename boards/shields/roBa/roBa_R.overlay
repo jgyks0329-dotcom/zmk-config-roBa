@@ -6,7 +6,8 @@
 };
 
 &zip_temp_layer {
-    require-prior-idle-ms = <200>;
+    require-prior-idle-ms = <400>;   // 200 → 400：最後の打鍵から0.4秒はボールが動いても発動しない
+    excluded-positions = <18 19 20>; // J K L
 };
 
 &zip_temp_layer {
@@ -32,7 +33,7 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 4 10000>;
+        input-processors = <&zip_temp_layer 4 800>; // 10000 → 800ms
     };
 };
 
